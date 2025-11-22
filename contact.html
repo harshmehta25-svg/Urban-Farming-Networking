@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Us - Urban Farming Network</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1>Contact Us</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <input type="text" id="name" required placeholder=" Name" />
+   
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" required placeholder="Email " />
+    </div>
+
+    <div class="form-group">
+      <textarea id="message"  required rows="5" placeholder="Message "></textarea>
+    
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+<script>
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+  const container = document.querySelector('.container');
+  container.innerHTML = `<b><p>Thank you for contacting us!</b></p>`;
+});
+</script>
+
+
+<footer>
+  <p><b>&copy; 2025 Urban Farming Network</b></p>
+</footer>
+</body>
+</html>
